@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>HTTPS and Security lab exercise</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Syed Saahil" />
+    <meta name="description" content="HTTP" />
+    <link href="../../../styles/main-style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header class="lab-header">
+        <h1>HTTP and Security Lab Exercises</h1>
+        <a href="../website-home-page.html">
+            <img class="web-logo" src="../../images/website-icon.png" alt="web-logo">
+        </a>
+    </header>
+    <div id="http-q-and-a">
+        <div>
+            <ol>
+                <li>
+                    <h3>What is the Hypertext Transfer Protocol (HTTP)?</h3>
+                    <P>HTTP is an application layer for transmitting hypermedia documents, such as HTML. It is a client-server model and was designed for web browsers and servers to communicate. The client opens a connection to make a request, then waiting until a response is received.</P>
+                </li>
+                <li>
+                    <h3>Why is HTTP called a stateless protocol?</h3>
+                    <p>HTTP is called a 'stateless protocol', symbolising that the server does not keep any data between two requests.</p>
+                </li>
+                <li>
+                    <h3>Describe the three phases of establishing a session using client-server protocols such as HTTP </h3>
+                    <p>Phase 1 - Client establishes an appropriate connection. In client-server protocols, clients are the ones who establish a connection. establishing a connection means to initiate a connection in the transport layer, usually TCP.</p>
+                    <p>Phase 2 - Client sends its request and waits for the answer. Once a connection is established, the web browser can send the request.</p>
+                    <p>Phase 3 - The request is processed by the server, sending back the answer, providing a status code and relevant data.</p>
+                </li>
+                <li>
+                    <h3>Describe the parameters on a get and post request.</h3>
+                    <p>The parameters on a get and post request are located in the URL. For the get request the parameters are separated by an "&" sign and are added to the URL by the use of a "?". The post request sends additional data to the server in the message body of the HTTP request, making it more secure as it can't be bookmarked and isn't stored in the browser history.</p>
+
+                </li>
+                <li>
+                    <h3>What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h3>
+                    <p>The HTTP response code tells the user whether the request was a success or a failure. The status code 200 indicates that the request was a success. The status code 404 indicates that the request was a failure.</p>
+
+                </li>
+                <li>
+                    <h3>What are HTTP cookies? Give an example.</h3>
+                    <p>An HTTP cookie is a small piece of data the server sends to the user's web browser. Cookies are usually used to tell if 2 requests come from the same browser. An example of what Cookies are mainly used for:</p>
+
+                    <p>Session management - Logins, shopping carts, game scores, or anything else the server should remember.</p>
+
+                    <p>Personalization - User preferences, themes, and other settings</p>
+
+                    <p>Tracking - Recording and analyzing user behavior</p>
+
+                </li>
+                <li>
+                    <h3>Why are cookies a security issue?</h3>
+                    <p>Cookies are a security issue as they can be used to steal another users session which, if the user is logged in, could give an attacker access to private information, such as payment details.</p>
+
+                </li>
+                <li>
+                    <h3>Describe session hijacking and XSS</h3>
+                    <p>Session hijacking is an attack where the user session is taken over by an attacker. The most common method of doing this is by using XSS. XXS is cross-site scripting. The attacker uses this by injecting client-side scripts into web pages causing the users browser to execute code when it loads the page. Without the use of HttpOnly attribute being set in session cookies, those injected scripts can gain access to the session key giving them the information to hijack the session.</p>
+                </li>
+                <li>
+                    <h3>Describe Cross-site request forgery(CSRF)</h3>
+                    <p>Cross-site request forgery (CSRF) is an attack that impersonates a trusted user and sends the website unwanted commands. This could be done by including malicious parameters in the URL.</p>
+                </li>
+                <li>
+                    <h3>What are Cross-site HTTP requests (CORS) and what requests use CORS?</h3>
+                    <p>Cross-origin resource sharing (CORS) is an HTTP header based mechanism that allows a server to indicate any other origins than its own from which a browser should allow the loading of resources. An XML Http Request can use CORS.</p>
+                </li>
+
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

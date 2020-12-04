@@ -1,0 +1,42 @@
+body {
+    font-family: 'Delius', cursive;
+}
+
+body {
+    background-color: #DDDCDF;
+    color: #C5153E;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Syncopate', sans-serif;
+    border-bottom: 0.3vw solid #C5153E;
+}
+
+#logo {
+    height: 1vh;
+}
+
+#nav-labs ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    border: 0.3vw solid #C5153E;
+    border-radius: 0.5vw;
+    list-style-type: none;
+}
+
+footer {
+    margin-top: 10vh;
+    border-top: 0.3vw solid #C5153E;
+}
+
+.panel {
+    border: 0.1vw solid #A09EA2;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    margin: 1vh 0;
+}

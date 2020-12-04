@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Questionnaire</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Syed Saahil" />
+    <meta name="description" content="questionnaire" />
+    <link href="../styles/main-style.css" rel="stylesheet" type="text/css" />
+    <script src="../scripts/main-script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="base-layout">
+
+        <header>
+            <h1>Questionnaire!</h1>
+            <a href="../website-home-page.html">
+                <img class="web-logo" src="images/website-icon.png" alt="web-logo">
+            </a>
+        </header>
+        <nav class="flex-nav">
+            <ul>
+                <li>
+                    <a href="../website-home-page.html">Home</a>
+                </li>
+                <li>
+                    <a href="../website-pages/html-basics-page.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../website-pages/css-in-a-nutshell.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../website-pages/javascript-overview.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="../website-pages/questionnaire-page.html">Questionnaire</a>
+                </li>
+            </ul>
+        </nav>
+        <form name="quiz" id="quiz">
+            <div>
+                <h3>1. what does HTML stand for?</h3>
+                <p><input type="radio" name="question1" value="Hyper-Text-Markup-Language">A. Hyper-Text-Markup-Language</p>
+                <p><input type="radio" name="question1" value="Hyper-Transmission-Markup-Language">B. Hyper-Transmission-Markup-Language</p>
+                <p><input type="radio" name="question1" value="Home-Tool-Markup-Language">C. Home-Tool-Markup-Language</p>
+                <p><input type="radio" name="question1" value="None of the above">D. None of the above
+                </p>
+            </div>
+
+            <div>
+                <h3>2. Which HTML element is usEd as the largest heading?</h3>
+                <p><input type="radio" name="question2" value="head">A. head</p>
+                <p><input type="radio" name="question2" value="h1">B. h1</p>
+                <p><input type="radio" name="question2" value="heading">C. heading</p>
+                <p><input type="radio" name="question2" value="h3">D. h3</p>
+            </div>
+
+            <div>
+                <h3>3. Which character is used to indicate an end tag?</h3>
+                <p><input type="radio" name="question3" value="/">A. /</p>
+                <p><input type="radio" name="question3" value=".">B. .</p>
+                <p><input type="radio" name="question3" value="-">C. -</p>
+                <p><input type="radio" name="question3" value="*">D. *</p>
+            </div>
+
+            <div>
+                <h3>4. Where in an HTML document is the correct place to refer to an external style sheet?</h3>
+                <p><input type="radio" name="question4" value="In the head section.">A. In the head section.</p>
+                <p><input type="radio" name="question4" value="In the body section.">B. In the body section.</p>
+                <p><input type="radio" name="question4" value="At the end of the HTML document">C. At the end of the HTML document</p>
+                <p><input type="radio" name="question4" value="CSS is best coded within the HTML document">D. CSS is best coded within the HTML document
+                </p>
+            </div>
+
+            <div>
+                <h3>5. Which property is used to change the background color?</h3>
+                <p><input type="radio" name="question5" value="background-colour:">A. background-colour:</p>
+                <p><input type="radio" name="question5" value="color">B. color</p>
+                <p><input type="radio" name="question5" value="bgcolour">C. bgcolour</p>
+                <p><input type="radio" name="question5" value="back-colour">D. back-colour</p>
+            </div>
+
+            <div>
+                <h3>6. How do you select an element with id 'quiz'?</h3>
+                <p><input type="radio" name="question6" value="'quiz">A. 'quiz</p>
+                <p><input type="radio" name="question6" value="@quiz">B. @quiz</p>
+                <p><input type="radio" name="question6" value="#quiz">C. #quiz</p>
+                <p><input type="radio" name="question6" value="*quiz">D. *quiz</p>
+            </div>
+
+            <div>
+                <h3>7. The external JavaScript file must contain the 'script' tag.</h3>
+                <p><input type="radio" name="question7" value="true">A. True</p>
+                <p><input type="radio" name="question7" value="false">B. False</p>
+            </div>
+
+            <div>
+                <h3>8. Which event occurs when the user clicks on an HTML element?</h3>
+                <p><input type="radio" name="question8" value="onmouseclick">A. onmouseclick</p>
+                <p><input type="radio" name="question8" value="onclick">B. onclick</p>
+                <p><input type="radio" name="question8" value="onchange">C. onchange</p>
+                <p><input type="radio" name="question8" value="None of the above">D. None of the above
+                </p>
+            </div>
+
+            <div>
+                <h3>9. JavaScript is the same as Java.</h3>
+                <p><input type="radio" name="question9" value="a.true">A. True</p>
+                <p><input type="radio" name="question9" value="b.false">B. False</p>
+            </div>
+
+        </form>
+
+        <div class="quiz-task-ans">
+            <button onclick="ansquizCheck()">Check answers</button>
+            <p id="answers-quiz"></p>
+        </div>
+
+        <footer class="general-foot">
+            <p>Author: Syed Saahil</p>
+            <p>Email: <a href="mailto:S.Saahil8438@student.leedsbeckett.ac.uk">S.Saahil8438@student.leedsbeckett.ac.uk</a></p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

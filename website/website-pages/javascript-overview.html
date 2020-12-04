@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JavaScript</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Syed Saahil" />
+    <meta name="description" content="js" />
+    <link href="../styles/main-style.css" rel="stylesheet" type="text/css" />
+    <script src="../scripts/main-script.js"></script>
+</head>
+
+<body class="box-brdr-body">
+    <div class="base-layout">
+
+        <header>
+            <h1>JavaScript</h1>
+            <a href="../website-home-page.html">
+                <img class="web-logo" src="images/website-icon.png" alt="web-logo">
+            </a>
+        </header>
+        <nav class="flex-nav">
+            <ul>
+                <li>
+                    <a href="../website-home-page.html">Home</a>
+                </li>
+                <li>
+                    <a href="../website-pages/html-basics-page.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../website-pages/css-in-a-nutshell.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../website-pages/javascript-overview.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="../website-pages/questionnaire-page.html">Questionnaire</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="box-pg-content">
+                <div class="cont-a">
+                    <h2>JavaScript tasks!</h2>
+                    <p>Answer the following question:</p>
+                    <p>Which is correct syntax for an array?</p>
+                    <input type="radio" name="array" value="array-1" />a<img src="../images/array-1.PNG" alt="array-1">
+                    <input type="radio" name="array" value="array-2" />b<img src="../images/array-2.PNG" alt="array-2">
+                    <input type="radio" name="array" value="array-3" />c<img src="../images/array-3.PNG" alt="array-3">
+
+                    <div class="js-task-ans">
+                        <button onclick="ansjsCheck()">Check answer</button>
+                        <p id="answers-js"></p>
+                    </div>
+                </div>
+
+
+                <div class="cont-b">
+                    <h3>What is JavaScript?</h3>
+                    <p>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+                </div>
+                <div class="cont-c">
+                    <h3>What is an array?</h3>
+                    <p> Arrays are generally described as "list-like objects"; they are basically single objects that contain multiple values stored in a list. Array objects can be stored in variables and dealt with in much the same way as any other type of value, the difference being that we can access each value inside the list individually, and do super useful and efficient things with the list, like loop through it and do the same thing to every value.</p>
+                    <p>If we didn't have arrays, we'd have to store every item in a separate variable, then call the code that does the printing and adding separately for each item. This would be much longer to write out, less efficient, and more error-prone. If we had 10 items to add to the invoice it would already be annoying, but what about 100 items, or 1000?</p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <footer class="general-foot">
+            <p>Author: Syed Saahil</p>
+            <p>Email: <a href="mailto:S.Saahil8438@student.leedsbeckett.ac.uk">S.Saahil8438@student.leedsbeckett.ac.uk</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+/* general slectors*/
+p {
+    color: black;
+}
+
+h1 {
+    color: #C5153E;
+}
+
+h2 {
+    color: #C5153E;
+
+}
+
+body {
+    background-color: #DDDCDF;
+    color: #C5153E;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Delius', cursive;
+
+}
+
+.lab-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Delius', cursive;
+    border-bottom: 0.2vw solid #C5153E;
+
+}
+
+.web-logo {
+    grid-area: header;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.general-foot {
+    text-align: center;
+    padding: 3px;
+    background-color: gray;
+    color: white;
+}
+
+.base-layout {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
+}
+
+/* nav for html and css page*/
+.flex-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1vh 1vw;
+    background-color: #c8c7c9
+}
+
+#personal-details {
+    grid-area: footer;
+    color: black;
+    margin-top: 1vh;
+    border-top: 0.3vw solid #C5153E;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* navigation for website home page */
+#main-nav {
+    grid-area: nav;
+    font-family: 'Delius', cursive;
+    padding: 0 10px 10px 10px;
+    border-right: 0.3vw solid #C5153E;
+    border-right-style: double;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+
+
+#section-intro {
+    grid-area: content;
+    font-family: 'Delius', cursive;
+    color: black;
+}
+
+
+
+/* sidebar styling*/
+#side {
+    grid-area: sidebar;
+    font-family: 'Delius', cursive;
+    color: black;
+    padding: 0 10px 10px 10px;
+    border-left: 0.3vw solid #C5153E;
+    border-left-style: double
+}
+
+#side-title {
+    color: #C5153E;
+    text-shadow: 0 0 6px BLACK;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* two boxes inside website home page*/
+#prog {
+    grid-area: checkbox;
+    border: 0.1vw solid #C5153E;
+    border-radius: 0.5vw;
+    padding: 0 10px 10px 10px;
+    margin: 1vh 0;
+    background-color: #c8c7c9;
+}
+
+#url {
+    grid-area: url;
+    border: 0.1vw solid #C5153E;
+    border-radius: 0.5vw;
+    padding: 0 10px 10px 10px;
+    margin: 1vh 0;
+    background-color: #c8c7c9;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/*dropdown css for website home page */
+.dropbtn {
+    background-color: #C5153E;
+    color: #DDDCDF;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DDDCDF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #c8c7c9;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #C5153E;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* website home page layout design and media queries*/
+#main-layout {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "sidebar"
+        "footer";
+}
+
+@media (min-width: 700px) {
+    #main-layout {
+        grid-template-columns: 1fr 5fr 2fr;
+        grid-template-areas:
+            "nav header  sidebar"
+            "nav    content sidebar"
+            "nav    content sidebar"
+            "footer footer  footer"
+    }
+
+}
+
+#div-check {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "checkbox"
+        "url"
+
+}
+
+@media (min-width: 700px) {
+    #div-check {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "checkbox   url"
+
+    }
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/* HTML page layout and content*/
+
+#html-pg-content {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "intro"
+        "fundamentals"
+        "elements"
+        "template";
+
+}
+
+@media (min-width: 700px) {
+    #html-pg-content {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "intro  intro   intro"
+            "fundamentals   template  elements";
+
+    }
+
+}
+
+#intro {
+    grid-area: intro;
+    border-bottom: 0.2vw solid #C5153E;
+}
+
+.html-text {
+    grid-area: fundamentals;
+    padding: 0 10px 10px 10px;
+    border-right: 0.3vw solid #C5153E;
+    border-right-style: double
+}
+
+#html-elements-url {
+    grid-area: elements;
+    padding: 0 10px 10px 10px;
+    border-left: 0.3vw solid #C5153E;
+    border-left-style: double
+}
+
+#html-ele {
+    color: black;
+}
+
+#html-template-cont {
+    grid-area: template;
+
+}
+
+#temp-title {
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/*hover effect on image css*/
+
+.container {
+    position: relative;
+    width: 65%;
+}
+
+.temp-img {
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container:hover .image {
+    opacity: 0.3;
+
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.html-hover-text {
+    background-color: #C5153E;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/* css and javascript page design*/
+
+@media (min-width: 700px) {
+    .box-brdr-body {
+        width: 150vh;
+        margin: 0 auto;
+        background-color: #DDDCDF;
+        padding: 0 20px 20px 20px;
+        border: 5px solid #C5153E;
+    }
+
+    .box-pg-content {
+        display: grid;
+        gap: 20px;
+        grid-template-areas:
+            "content-a"
+            "content-a"
+            "content-a";
+
+    }
+
+    .box-pg-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "content-a  content-b"
+            "content-a  content-c";
+    }
+
+    /*-------------------------------------------------------------------------------*/
+
+    /* css and javascript content layout*/
+    .cont-a {
+        grid-area: content-a;
+        background-color: #c8c7c9;
+    }
+
+    .cont-b {
+        grid-area: content-b;
+        background-color: #c8c7c9;
+    }
+
+    .cont-c {
+        grid-area: content-c;
+        background-color: #c8c7c9;
+    }

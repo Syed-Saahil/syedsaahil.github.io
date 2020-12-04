@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cascading Style Sheet</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Syed Saahil" />
+    <meta name="description" content="CSS" />
+    <link href="../styles/main-style.css" rel="stylesheet" type="text/css" />
+    <script src="../scripts/main-script.js"></script>
+</head>
+
+<body class="box-brdr-body">
+    <div class="base-layout">
+
+        <header>
+            <h1>CSS IN A NUTSHELL!</h1>
+            <a href="../website-home-page.html">
+                <img class="web-logo" src="images/website-icon.png" alt="web-logo">
+            </a>
+        </header>
+        <nav class="flex-nav">
+            <ul>
+                <li>
+                    <a href="../website-home-page.html">Home</a>
+                </li>
+                <li>
+                    <a href="../website-pages/html-basics-page.html">HTML</a>
+                </li>
+                <li>
+                    <a href="../website-pages/css-in-a-nutshell.html">CSS</a>
+                </li>
+                <li>
+                    <a href="../website-pages/javascript-overview.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="../website-pages/questionnaire-page.html">Questionnaire</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="box-pg-content">
+                <div class="cont-a">
+
+                    <h2>CSS Properties Task!</h2>
+                    <div>
+                        <label for="item">What 5 propeties can you select inside justify-content?</label>
+                        <input type="text" name="item" id="item">
+                        <button>Add</button>
+                    </div>
+
+                    <ol>
+
+                    </ol>
+
+                    <script>
+                        const list = document.querySelector('ol');
+                        const input = document.querySelector('input');
+                        const button = document.querySelector('button');
+                        let answers = ['center', 'flex-end', 'flex-start', 'space-between', 'space-around']
+
+                        button.onclick = function() {
+                            let myItem = input.value;
+                            input.value = '';
+
+                            const listItem = document.createElement('li');
+                            const listText = document.createElement('span');
+                            const listBtn = document.createElement('button');
+
+                            listItem.appendChild(listText);
+                            listText.textContent = myItem;
+                            listItem.appendChild(listBtn);
+                            listBtn.textContent = 'Delete';
+                            list.appendChild(listItem);
+
+                            listBtn.onclick = function(e) {
+                                list.removeChild(listItem);
+                            }
+
+                            input.focus();
+                        }
+
+                    </script>
+
+                    <div class="css-task-ans">
+                        <button onclick="anscssCheck()">Check answers</button>
+                        <p id="answers-css"></p>
+                    </div>
+
+                </div>
+
+                <div class="cont-b">
+                    <h3>What is CSS?</h3>
+                    <p>CSS can be used for very basic document text styling — for example changing the color and size of headings and links. It can be used to create layout — for example turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation.</p>
+                </div>
+                <div class="cont-c">
+                    <h3>Flexbox</h3>
+                    <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                    <h4>justify-content</h4>
+                    <p>is a selector when using flex for positional purposes. Properties such as center, flex-end, flex-start,- space-between, space-around, are usefull when positioning something on a web-page.</p>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <footer class="general-foot">
+            <p>Author: Syed Saahil</p>
+            <p>Email: <a href="mailto:S.Saahil8438@student.leedsbeckett.ac.uk">S.Saahil8438@student.leedsbeckett.ac.uk</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
